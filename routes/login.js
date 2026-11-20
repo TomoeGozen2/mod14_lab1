@@ -23,8 +23,9 @@ route.post('/post/register', async (req,res) =>{
 })
 
  
-const correctPw = await user.isCorrectPassword(req.body.password);
+// const correctPw = await user.isCorrectPassword(req.body.password);
  
-if (!correctPw) {
-  return res.status(400).json({ message: "Incorrect email or password" });
-}
+// if (!correctPw) {
+//   return res.status(400).json({ message: "Incorrect email or password" });
+// }
+export default route;
